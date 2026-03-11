@@ -19,7 +19,7 @@ jobs:
           cache: maven
 
       - name: Build JAR
-        run: ./mvnw package -DskipTests -B
+        run: chmod +x mvnw && ./mvnw package -DskipTests -B
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
