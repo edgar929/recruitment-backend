@@ -52,7 +52,8 @@ public class SecurityConfig {
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration config = new CorsConfiguration();
-		config.addAllowedOriginPattern("*");
+		config.addAllowedOriginPattern("https://edgar-recruitment.netlify.app");
+		config.addAllowedOriginPattern("http://localhost:3000");
 		config.setAllowCredentials(true);
 		config.addAllowedHeader("*");
 		config.addAllowedMethod("*");
